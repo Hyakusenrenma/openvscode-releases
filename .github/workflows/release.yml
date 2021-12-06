@@ -51,7 +51,7 @@ jobs:
           image: vscodium/vscodium-linux-build-agent:stretch-armhf
 
     name: Build linux-${{ matrix.vscode_arch }}
-#     if: github.event.inputs.commit || github.event.workflow_run.conclusion == 'success'
+    if: github.event.inputs.commit || github.event.workflow_run.conclusion == 'success'
     steps:  
         # Get the release commit from the Insiders workflow
       - name: Download artifact
