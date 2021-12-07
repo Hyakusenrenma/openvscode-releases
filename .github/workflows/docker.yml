@@ -55,4 +55,4 @@ jobs:
           build-args: |
             RELEASE_TAG=${{ github.event.inputs.release_tag }}
             RELEASE_ORG=${{ github.repository_owner }}
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: test
